@@ -9,10 +9,11 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
-    Date currentTime;
-    Date[] startTimes;
+    long[] startTimes;
+    long currentTime;
     int primaryTimeIndex;
 
 
@@ -21,20 +22,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        currentTime = Calendar.getInstance().getTime();
+        currentTime = Calendar.getInstance().getTimeInMillis();
         // Change to database
         int startTimeLength = 10;
         primaryTimeIndex = 0;
-        startTimes = new Date[startTimeLength];
+        startTimes = new long[startTimeLength];
         populateSampleTimes();
         populatePrimaryCounter();
     }
 
     //Sample Times for debugging
     void populateSampleTimes (){
-        startTimes[0] = new Date(99, 5 , 13, 7,0);
+        startTimes[0] = 1583069551000L;
         for(int  i = 1; i<10; i++){
-            startTimes[i] = new Date(120, 2, i );
+            startTimes[i] = 1583069551000L;
         }
     }
 
@@ -47,16 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Calcualtes the amount of days between 2 Date.Type
-    int daysBetween (Date dateStart, Date dateEnd){
-        if(dateStart.getTime()>dateEnd.getTime()){
-            Date temp = dateStart;
-            dateStart = dateEnd;
-            dateEnd = temp;
-        }
-        long difference = dateEnd.getTime() - dateStart.getTime();
-        long daysBetween = (difference / (1000*60*60*24));
-        int dayDiff = (int) daysBetween;
-        return dayDiff;
+    int daysBetween (Long dateStart, Long dateEnd){
+        long msDiff = dateEnd-dateStart;
+        int daysDiff = (int) TimeUnit.MILLISECONDS.toDays(msDiff);
+        return daysDiff;
     }
 
     //BIND To Add Button
@@ -66,7 +61,4 @@ public class MainActivity extends AppCompatActivity {
         dialog.show(getSupportFragmentManager(), "Test3");
     }
 
-    void createCount(Date startDate, String name, String  description, boolean notify, int goal){
-        Count newCount = new Count(startDate, name ,description,notify, goal);
-    }
 }

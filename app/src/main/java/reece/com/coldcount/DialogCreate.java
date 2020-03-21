@@ -14,8 +14,11 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.fragment.app.DialogFragment;
+
+import java.util.Calendar;
 
 /**
  * TODO: document your custom view class.
@@ -31,10 +34,15 @@ public class DialogCreate extends DialogFragment {
         // Pass null as the parent view because its going in the dialog layout
         builder.setView(inflater.inflate(R.layout.dialog_create, null))
                 // Add action buttons
-                .setPositiveButton("SignIn", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Create", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        // sign in the user ...
+                        //Take info and create an account, push to database.
+
+                        String Name;
+                        int goal;
+                        Boolean notfiy;
+
                     }
                 })
 
@@ -45,4 +53,5 @@ public class DialogCreate extends DialogFragment {
                 });
         return builder.create();
     }
+
 }
