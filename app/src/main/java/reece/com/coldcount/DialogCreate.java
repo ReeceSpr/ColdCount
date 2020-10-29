@@ -24,15 +24,29 @@ import java.util.Calendar;
  * TODO: document your custom view class.
  */
 public class DialogCreate extends DialogFragment {
+
+    String dialogType;
+
+    public DialogCreate (String dialogType){
+        this.dialogType = dialogType;
+    }
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        int layoutResourceID = R.layout.dialog_create;
+        if(dialogType == "Create"){
+            layoutResourceID = R.layout.dialog_create;
+        } else if(dialogType == "Goal"){
+            layoutResourceID = R.layout.dialog_goal;
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         // Get the layout inflater
         LayoutInflater inflater = requireActivity().getLayoutInflater();
 
         // Inflate and set the layout for the dialog
         // Pass null as the parent view because its going in the dialog layout
-        builder.setView(inflater.inflate(R.layout.dialog_create, null))
+        builder.setView(inflater.inflate(layoutResourceID, null))
                 // Add action buttons
                 .setPositiveButton("Create", new DialogInterface.OnClickListener() {
                     @Override
@@ -45,7 +59,6 @@ public class DialogCreate extends DialogFragment {
 
                     }
                 })
-
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         DialogCreate.this.getDialog().cancel();
