@@ -1,0 +1,15 @@
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/bin/Debug/netstandard2.0/ColdCount.deps.json
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/bin/Debug/netstandard2.0/ColdCount.dll
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/bin/Debug/netstandard2.0/ref/ColdCount.dll
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/bin/Debug/netstandard2.0/ColdCount.pdb
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.csproj.AssemblyReference.cache
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.GeneratedMSBuildEditorConfig.editorconfig
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.AssemblyInfoInputs.cache
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.AssemblyInfo.cs
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.csproj.CoreCompileInputs.cache
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.dll
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ref/ColdCount.dll
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount/obj/Debug/netstandard2.0/ColdCount.pdb

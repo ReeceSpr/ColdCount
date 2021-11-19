@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{EA9E7E7D-B909-4A6D-AAE3-3733D4DA163A}|Default">
+  <MonoDevelop.Ide.ItemProperties.ColdCount.Android PreferredExecutionTarget="Android.2768a78c000d7ece" />
+  <MonoDevelop.Ide.ItemProperties.ColdCount.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ColdCount/MainPage.xaml">
+    <Files>
+      <File FileName="ColdCount/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="ColdCount/App.xaml" Line="1" Column="1" />
+      <File FileName="ColdCount/MainPage.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ColdCount" expanded="True">
+            <Node name="ColdCount" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" selected="True" />
+            </Node>
+            <Node name="ColdCount.Android" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

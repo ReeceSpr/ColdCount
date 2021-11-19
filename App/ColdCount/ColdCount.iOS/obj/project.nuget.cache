@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oilLkCtVAjaybSk5NmNM5V3jrL4x8H9cKbh6DkfYSbO48vpKhISJqizBJZVsTz3gItpALrlUDoQmNtzOM+dSMw==",
+  "success": true,
+  "projectFilePath": "/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount.iOS/ColdCount.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/reecespragg/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/reecespragg/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/reecespragg/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
