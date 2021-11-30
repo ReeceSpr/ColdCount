@@ -113,6 +113,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,5 +134,8 @@
       <Project>{989976E5-E84C-48BE-AF3A-8CFC7080915B}</Project>
       <Name>ColdCount</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Logo.imageset\" />
   </ItemGroup>
 </Project>

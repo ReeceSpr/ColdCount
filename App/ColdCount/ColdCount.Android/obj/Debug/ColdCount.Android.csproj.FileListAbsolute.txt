@@ -574,3 +574,5 @@
 /Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount.Android/obj/Debug/res/drawable/logo.png
+/Users/reecespragg/Documents/GitHub/ColdCount/App/ColdCount/ColdCount.Android/obj/Debug/res/drawable/icon.png

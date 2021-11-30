@@ -2,23 +2,38 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ColdCount.MainPage">
+    
+    <StackLayout BackgroundColor="{StaticResource ColorAccent}"  >
+        <Frame BackgroundColor="{StaticResource ColorAccent}" Padding="24" CornerRadius="0" HasShadow="False">
+            <Image HeightRequest="150" Source="Logo" />
+            </Frame>
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms! (The Begining of Cold Count)." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Grid>
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+            <Grid.RowDefinitions><RowDefinition Height="*" /></Grid.RowDefinitions>
+            <Frame Grid.Column="0" BorderColor="{StaticResource ColorDark}" CornerRadius="20" Margin="10,10" Padding="0,34" HasShadow="True" BackgroundColor="Transparent">
+                <Label Grid.Column="0" TextColor="{StaticResource ColorDark}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24">Gaming</Label>
+            </Frame>
+            <Frame Grid.Column="1" BorderColor="{StaticResource ColorDark}" CornerRadius="20" Margin="10,10" Padding="0,34" HasShadow="True" BackgroundColor="Transparent">
+                <Label Grid.Column="1" TextColor="{StaticResource ColorDark}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24">Drinking</Label>
+            </Frame>
+            <Frame Grid.Column="2" BorderColor="{StaticResource ColorDark}" CornerRadius="20" Margin="10,10" Padding="0,34" HasShadow="True" BackgroundColor="Transparent">
+                <Label Grid.Column="2" TextColor="{StaticResource ColorDark}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24">Smoking</Label>
+            </Frame>
+        </Grid>
+
+        <Frame BackgroundColor="Transparent" HeightRequest="50" Margin="0,20" Padding="10,10">
+        <Editor Placeholder="Give your count a name?" PlaceholderColor="{StaticResource ColorDark}" TextColor="{StaticResource ColorDark}"
+              HeightRequest="50" FontSize="24" />
+            </Frame>
+
+        <StackLayout BackgroundColor="Transparent" HeightRequest="50" Margin="0,20" Padding="10,10">
+            <Label TextColor ="{StaticResource ColorDark}" FontSize="24" Padding="10,0">Set a goal?</Label>
+            <Slider Maximum="31" Minimum="1"  ValueChanged="Slider_ValueChanged" />
+            <Label x:Name="dayLabel"  TextColor="{StaticResource ColorDark}" FontSize="24" HorizontalTextAlignment="End" Padding="10,0" >1 Day!</Label>
+            </StackLayout>
+
+        <ImageButton Source="Logo" HeightRequest="50" BackgroundColor="Transparent"></ImageButton>
     </StackLayout>
 
 </ContentPage>

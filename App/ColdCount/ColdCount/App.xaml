@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ColdCount.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="ColorAccent">#76F6EF</Color>
+            <Color x:Key="ColorDark">#183FB4</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
